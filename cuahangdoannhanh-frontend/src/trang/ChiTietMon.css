@@ -1,0 +1,124 @@
+/* src/trang/ChiTietMon.css */
+.chi-tiet-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh;
+}
+
+.nut-quay-lai {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+.nut-quay-lai:hover {
+    color: #d32f2f;
+}
+
+.chi-tiet-content {
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Responsive: Trên điện thoại thì xếp dọc */
+@media (max-width: 768px) {
+    .chi-tiet-content {
+        flex-direction: column;
+    }
+}
+
+.chi-tiet-anh {
+    flex: 1;
+}
+
+.chi-tiet-anh img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.chi-tiet-thong-tin {
+    flex: 1;
+}
+
+.chi-tiet-thong-tin h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+.chi-tiet-gia {
+    color: #d32f2f;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.chi-tiet-mo-ta {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Bộ đếm số lượng */
+.chon-so-luong {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.bo-dem {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bo-dem button {
+    width: 35px;
+    height: 35px;
+    background: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bo-dem button:hover {
+    background: #e0e0e0;
+}
+
+.bo-dem input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+}
+
+/* Nút đặt hàng */
+.nut-dat-hang {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.nut-dat-hang:hover {
+    background-color: #b71c1c;
+    transform: scale(1.02);
+}

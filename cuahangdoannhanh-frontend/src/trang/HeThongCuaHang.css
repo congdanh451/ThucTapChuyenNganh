@@ -1,0 +1,59 @@
+.cua-hang-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 70vh;
+}
+
+.ds-cua-hang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-cua-hang {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-cua-hang:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px;
+}
+
+.card-header h3 { margin: 0; font-size: 18px; }
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-body p { margin-bottom: 10px; color: #555; }
+
+.btn-chi-duong {
+    margin: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #d32f2f;
+    color: #d32f2f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-chi-duong:hover {
+    background-color: #d32f2f;
+    color: white;
+}

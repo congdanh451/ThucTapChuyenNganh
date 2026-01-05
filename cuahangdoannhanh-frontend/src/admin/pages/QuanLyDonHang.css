@@ -1,0 +1,206 @@
+/* --- KHUNG CHUNG --- */
+.admin-page-container {
+    padding: 20px;
+    background-color: #f5f6fa;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+}
+
+/* --- BẢNG DỮ LIỆU (Card) --- */
+.admin-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.modern-table thead tr {
+    background-color: #f1f2f6;
+    color: #333;
+    text-align: left;
+}
+
+.modern-table th {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 2px solid #ddd;
+}
+
+.modern-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    color: #555;
+    font-size: 14px;
+}
+
+.modern-table tr:hover {
+    background-color: #fafafa;
+}
+
+.price-text {
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+/* --- BADGE TRẠNG THÁI (Nếu không dùng inline style) --- */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+.badge-warning { background-color: #fff3cd; color: #856404; }
+.badge-info { background-color: #d1ecf1; color: #0c5460; }
+.badge-success { background-color: #d4edda; color: #155724; }
+.badge-danger { background-color: #f8d7da; color: #721c24; }
+
+/* --- NÚT BẤM --- */
+.btn-icon {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.btn-icon:hover { opacity: 0.9; transform: translateY(-1px); }
+
+/* --- MODAL (POPUP) --- */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    max-height: 90vh; /* Tránh dài quá màn hình */
+    overflow-y: auto; /* Cho phép cuộn dọc nếu dài */
+    animation: zoomIn 0.3s ease;
+}
+
+.large-modal {
+    width: 900px;
+    max-width: 95%;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 { margin: 0; color: #333; }
+
+.close-btn {
+    background: none; border: none; font-size: 28px; color: #999; cursor: pointer;
+}
+.close-btn:hover { color: #d32f2f; }
+
+/* --- LAYOUT TRONG MODAL (GRID 2 CỘT) --- */
+.modal-body-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr; /* Cột trái lớn hơn cột phải */
+    gap: 25px;
+}
+
+/* Cột Trái: Sản phẩm */
+.col-products h4, .col-info h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.mini-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.mini-table th { background: #f8f9fa; padding: 8px; text-align: left; color: #666; }
+.mini-table td { padding: 8px; border-bottom: 1px solid #eee; }
+
+.bill-summary {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.bill-summary div {
+    display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px;
+}
+
+/* Cột Phải: Thông tin & Tác vụ */
+.info-box {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.info-box p { margin: 5px 0; color: #333; }
+.info-box strong { color: #555; }
+
+.action-buttons button {
+    width: 100%; /* Nút full chiều ngang */
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.action-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 768px) {
+    .modal-body-grid {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+    }
+    .large-modal { width: 95%; }
+}

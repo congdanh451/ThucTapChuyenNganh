@@ -1,0 +1,27 @@
+.role-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.role-1 { background: #333; color: white; } /* Admin */
+.role-2 { background: #8e44ad; color: white; } /* Quản lý */
+.role-3 { background: #2980b9; color: white; } /* Nhân viên */
+.role-4 { background: #ecf0f1; color: #7f8c8d; } /* Khách */
+.form-grid-account {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    align-items: end; /* Căn nút bấm xuống đáy */
+}
+
+.btn-cancel-edit {
+    margin-left: 15px;
+    padding: 5px 10px;
+    background: #95a5a6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}

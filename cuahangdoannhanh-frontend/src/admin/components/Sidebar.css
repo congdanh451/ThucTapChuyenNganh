@@ -1,0 +1,108 @@
+.sidebar {
+    width: 250px;
+    height: 100vh; /* Cao full màn hình */
+    background-color: #2c3e50; /* Màu xanh đen chuyên nghiệp */
+    color: white;
+    position: fixed; /* Cố định bên trái */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background-color: #1a252f;
+    text-align: center;
+    border-bottom: 1px solid #34495e;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    color: #e74c3c; /* Màu đỏ điểm nhấn */
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.sidebar-header p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #bdc3c7;
+}
+
+/* Menu List */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-grow: 1; /* Đẩy footer xuống đáy */
+}
+
+.sidebar-menu li {
+    margin-bottom: 5px;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 15px 25px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-menu a:hover {
+    background-color: #34495e;
+    color: white;
+}
+
+/* Link đang được chọn (Active) */
+.sidebar-menu a.active {
+    background-color: #34495e;
+    border-left-color: #e74c3c; /* Vạch đỏ bên trái */
+    font-weight: bold;
+}
+
+/* Footer (Nút đăng xuất) */
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #34495e;
+    background-color: #1a252f;
+}
+
+.btn-logout-admin {
+    width: 100%;
+    padding: 10px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-logout-admin:hover {
+    background-color: #e74c3c;
+}
+/* Thêm vào cuối file src/admin/components/Sidebar.css */
+
+.btn-go-home {
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60; /* Màu xanh lá thân thiện */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-bottom: 10px; /* Cách nút đăng xuất một chút */
+}
+
+.btn-go-home:hover {
+    background-color: #2ecc71;
+}

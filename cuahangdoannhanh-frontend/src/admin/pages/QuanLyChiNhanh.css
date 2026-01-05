@@ -1,0 +1,74 @@
+/* Dùng chung style cơ bản từ các trang trước */
+.admin-page-container {
+    margin-left: 250px; /* Đẩy sang phải né Sidebar */
+    padding: 30px;
+    background-color: #f4f6f8;
+    min-height: 100vh;
+}
+
+.branch-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr; /* Cột trái 350px, Cột phải tự động */
+    gap: 30px;
+}
+
+/* Form Card */
+.form-card {
+    height: fit-content; /* Chiều cao vừa đủ nội dung */
+}
+
+.full-width-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* List Card */
+.list-card {
+    min-height: 500px;
+}
+
+/* Responsive: Nếu màn hình nhỏ thì xếp chồng lên nhau */
+@media (max-width: 1000px) {
+    .branch-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Các class dùng chung (cần đảm bảo file này nhận diện được hoặc copy từ QuanLySanPham.css sang) */
+.admin-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    background: white;
+}
+.card-header h3 { margin: 0; color: #d32f2f; font-size: 16px; text-transform: uppercase; }
+.card-body { padding: 20px; }
+
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 13px; color: #555; }
+.form-input, .form-textarea {
+    width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;
+}
+.form-input:focus { border-color: #d32f2f; outline: none; }
+
+.btn-submit {
+    background: #d32f2f; color: white; border: none; padding: 10px 20px;
+    border-radius: 4px; font-weight: bold; cursor: pointer; transition: 0.2s;
+}
+.btn-submit:hover { background: #b71c1c; }
+
+/* Table */
+.modern-table { width: 100%; border-collapse: collapse; }
+.modern-table th { background: #f9f9f9; padding: 12px; text-align: left; font-size: 12px; color: #666; border-bottom: 2px solid #eee; }
+.modern-table td { padding: 12px; border-bottom: 1px solid #eee; font-size: 14px; }
+.text-center { text-align: center; }
+
+.btn-icon { width: 30px; height: 30px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.btn-delete { background: #ffebee; color: #d32f2f; }
+.btn-delete:hover { background: #ffcdd2; }

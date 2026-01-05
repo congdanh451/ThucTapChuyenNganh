@@ -1,0 +1,169 @@
+/* src/trang/GioHang.css */
+
+.gio-hang-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 60vh;
+}
+
+.tieu-de-gio-hang {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Layout 2 cột: Trái (DS món) - Phải (Tổng tiền) */
+.noi-dung-gio-hang {
+    display: flex;
+    gap: 30px;
+}
+
+.danh-sach-mon {
+    flex: 2; /* Chiếm 2 phần */
+}
+
+.tong-ket-don {
+    flex: 1; /* Chiếm 1 phần */
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    height: fit-content;
+    border: 1px solid #eee;
+}
+
+/* Item trong giỏ */
+.item-gio-hang {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    gap: 15px;
+}
+
+.anh-item {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.thong-tin-item {
+    flex: 1;
+}
+
+.thong-tin-item h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.gia-item {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Bộ điều khiển số lượng */
+.bo-dieukhien-soluong {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.bo-dieukhien-soluong button {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bo-dieukhien-soluong button:hover {
+    background: #f0f0f0;
+}
+
+.bo-dieukhien-soluong span {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.tong-tien-item {
+    font-weight: bold;
+    color: #d32f2f;
+    width: 100px;
+    text-align: right;
+}
+
+.nut-xoa {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nut-xoa:hover {
+    color: #d32f2f;
+}
+
+/* Phần tổng kết */
+.dong-tong {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.tong-cong {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-top: 15px;
+}
+
+.nut-thanh-toan {
+    width: 100%;
+    padding: 15px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.nut-thanh-toan:hover {
+    background-color: #b71c1c;
+}
+
+/* Giỏ hàng trống */
+.gio-hang-trong {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nut-mua-tiep {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .noi-dung-gio-hang {
+        flex-direction: column;
+    }
+}
